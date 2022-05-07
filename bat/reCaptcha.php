@@ -1,6 +1,6 @@
 <?php
 // Initiate the autoloader.
-require_once 'ReCaptcha/autoload.php';
+require_once 'ReCaptcha/autoload.html';
 
 // Register You API keys at https://www.google.com/recaptcha/admin
 // And write it here

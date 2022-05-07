@@ -11,7 +11,7 @@
  * @copyright 2014 Marcus Bointon
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
- * @license http://www.gnu.org/copyleft/lesser.php GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  * @note This program is distributed in the hope that it will be useful - WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.
@@ -129,7 +129,7 @@ class SMTP
     /**
      * Whether to use VERP.
      * @link http://en.wikipedia.org/wiki/Variable_envelope_return_path
-     * @link http://www.postfix.org/VERP_README.php Info on VERP
+     * @link http://www.postfix.org/VERP_README.html Info on VERP
      * @type boolean
      */
     public $do_verp = false;
@@ -434,14 +434,14 @@ class SMTP
                 break;
             case 'NTLM':
                 /*
-                 * ntlm_sasl_client.php
+                 * ntlm_sasl_client.html
                  * Bundled with Permission
                  *
                  * How to telnet in windows:
                  * http://technet.microsoft.com/en-us/library/aa995718%28EXCHG.65%29.aspx
-                 * PROTOCOL Docs http://curl.haxx.se/rfc/ntlm.php#ntlmSmtpAuthentication
+                 * PROTOCOL Docs http://curl.haxx.se/rfc/ntlm.html#ntlmSmtpAuthentication
                  */
-                require_once 'extras/ntlm_sasl_client.php';
+                require_once 'extras/ntlm_sasl_client.html';
                 $temp = new stdClass();
                 $ntlm_client = new ntlm_sasl_client_class;
                 //Check that functions are available
@@ -518,7 +518,7 @@ class SMTP
         }
 
         // The following borrowed from
-        // http://php.net/manual/en/function.mhash.php#27225
+        // http://php.net/manual/en/function.mhash.html#27225
 
         // RFC 2104 HMAC implementation for php.
         // Creates an md5 HMAC.

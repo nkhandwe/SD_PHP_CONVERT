@@ -1,14 +1,4 @@
-<div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.php"><img class="brand-logo-dark" src="images/logo-default-159x40.png" alt="" width="159" height="40" srcset="images/logo-default-318x80.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-159x40.png" alt="" width="159" height="40" srcset="images/logo-inverse-318x80.png 2x"/></a>
-                  </div>
-                </div>
-                <div class="rd-navbar-main-element">
+<div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
@@ -102,20 +92,3 @@
                       </li>
                     </ul>
                   </div>
-                  <!-- RD Navbar Search-->
-                  <div class="rd-navbar-search">
-                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
-                    <form class="rd-search" action="search-results.php" data-search-live="rd-search-results-live" method="GET">
-                      <div class="form-wrap">
-                        <label class="form-label" for="rd-navbar-search-form-input">Search</label>
-                        <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
-                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
-                      </div>
-                      <button class="rd-search-form-submit fa-search" type="submit"></button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>

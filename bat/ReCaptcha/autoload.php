@@ -23,7 +23,7 @@ spl_autoload_register(function ($class) {
      * we look here first, so that we don't waste time searching for
      * test classes in the common case.
      */
-    $path = $class.'.php';
+    $path = $class.'.html';
     if (is_readable($path)) {
         require_once $path;
     }
