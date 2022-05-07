@@ -23,6 +23,7 @@
       </div>
     </div>
     <div class="page">
+        <!-- Page Header-->
      <?php include 'pageheader.php' ?>
      <?php include 'menu.php' ?>
       </header>
@@ -227,6 +228,7 @@
           </div>
         </div>
       </section>
+      <!-- Page footer -->
      <?php include 'footer.php'?>
     </div>
     <div class="snackbars" id="form-output-global"></div>
