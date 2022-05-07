@@ -50,7 +50,7 @@
                               <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="powerofattorney.php">Power of attorney → </a></li>
                               </ul>
                           </li>
-                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="notaryandattestation.php">Notary and attestation →</a>
+                         <li class="rd-dopdown-item"><a class="rd-dropdown-link" href="notaryandattestation.php">Notary and attestation →</a>
                             
                           </li>
                         </ul>
