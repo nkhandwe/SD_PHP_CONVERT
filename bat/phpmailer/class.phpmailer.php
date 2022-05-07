@@ -11,7 +11,7 @@
  * @copyright 2012 - 2014 Marcus Bointon
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license http://www.gnu.org/copyleft/lesser.php GNU Lesser General Public License
  * @note This program is distributed in the hope that it will be useful - WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.
@@ -119,7 +119,7 @@ class PHPMailer
     /**
      * An iCal message part body.
      * Only supported in simple alt or alt_inline message types
-     * To generate iCal events, use the bundled extras/EasyPeasyICS.html class or iCalcreator
+     * To generate iCal events, use the bundled extras/EasyPeasyICS.php class or iCalcreator
      * @link http://sprain.ch/blog/downloads/php-class-easypeasyics-create-ical-files-with-php/
      * @link http://kigkonsult.se/iCalcreator/
      * @type string
@@ -351,7 +351,7 @@ class PHPMailer
      * Whether to generate VERP addresses on send.
      * Only applicable when sending via SMTP.
      * @link http://en.wikipedia.org/wiki/Variable_envelope_return_path
-     * @link http://www.postfix.org/VERP_README.html Postfix VERP info
+     * @link http://www.postfix.org/VERP_README.php Postfix VERP info
      * @type boolean
      */
     public $do_verp = false;
@@ -409,7 +409,7 @@ class PHPMailer
      * The function that handles the result of the send email action.
      * It is called out by send() for each email sent.
      *
-     * Value can be any php callable: http://www.html.net/is_callable
+     * Value can be any php callable: http://www.php.net/is_callable
      *
      * Parameters:
      *   boolean $result        result of the send action
@@ -1152,7 +1152,7 @@ class PHPMailer
      * Send mail using the PHP mail() function.
      * @param string $header The message headers
      * @param string $body The message body
-     * @link http://www.html.net/manual/en/book.mail.html
+     * @link http://www.php.net/manual/en/book.mail.php
      * @throws phpmailerException
      * @access protected
      * @return boolean
@@ -1433,7 +1433,7 @@ class PHPMailer
             $lang_path = dirname(__FILE__). DIRECTORY_SEPARATOR . 'language'. DIRECTORY_SEPARATOR;
         }
         $foundlang = true;
-        $lang_file = $lang_path . 'phpmailer.lang-' . $langcode . '.html';
+        $lang_file = $lang_path . 'phpmailer.lang-' . $langcode . '.php';
         if ($langcode != 'en') { // There is no English translation file
             // Make sure language file path is readable
             if (!is_readable($lang_file)) {
@@ -1972,7 +1972,7 @@ class PHPMailer
                     throw new phpmailerException($this->lang('signing') . ' Could not write temp file');
                 }
                 $signed = tempnam(sys_get_temp_dir(), 'signed');
-                //Workaround for PHP bug https://bugs.html.net/bug.html?id=69197
+                //Workaround for PHP bug https://bugs.php.net/bug.php?id=69197
                 if (empty($this->sign_extracerts_file)) {
                     $sign = @openssl_pkcs7_sign(
                         $file,
@@ -2443,7 +2443,7 @@ class PHPMailer
      * Encode and wrap long multibyte strings for mail headers
      * without breaking lines within a character.
      * Adapted from a function by paravoid
-     * @link http://www.html.net/manual/en/function.mb-encode-mimeheader.html#60283
+     * @link http://www.php.net/manual/en/function.mb-encode-mimeheader.php#60283
      * @access public
      * @param string $str multi-byte text to wrap encode
      * @param string $linebreak string to use as linefeed/end-of-line
@@ -2489,7 +2489,7 @@ class PHPMailer
      * @param string $string The text to encode
      * @param integer $line_max Number of chars allowed on a line before wrapping
      * @return string
-     * @link http://www.html.net/manual/en/function.quoted-printable-decode.html#89417 Adapted from this comment
+     * @link http://www.php.net/manual/en/function.quoted-printable-decode.php#89417 Adapted from this comment
      */
     public function encodeQP($string, $line_max = 76)
     {
@@ -3162,7 +3162,7 @@ class PHPMailer
      * Multi-byte-safe pathinfo replacement.
      * Drop-in replacement for pathinfo(), but multibyte-safe, cross-platform-safe, old-version-safe.
      * Works similarly to the one in PHP >= 5.2.0
-     * @link http://www.html.net/manual/en/function.pathinfo.html#107461
+     * @link http://www.php.net/manual/en/function.pathinfo.php#107461
      * @param string $path A filename or path, does not need to exist as a file
      * @param integer|string $options Either a PATHINFO_* constant,
      *      or a string name to return only the specified piece, allows 'filename' to work on PHP < 5.2

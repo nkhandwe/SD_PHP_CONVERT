@@ -66,52 +66,52 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-159x40.png" alt="" width="159" height="40" srcset="images/logo-default-318x80.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-159x40.png" alt="" width="159" height="40" srcset="images/logo-inverse-318x80.png 2x"/></a>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.php"><img class="brand-logo-dark" src="images/logo-default-159x40.png" alt="" width="159" height="40" srcset="images/logo-default-318x80.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-159x40.png" alt="" width="159" height="40" srcset="images/logo-inverse-318x80.png 2x"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.php">Home</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="about.php">About</a>
                       </li>
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Services</a>
                         <!-- RD Navbar Dropdown-->
                         <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-service.html">Single Service</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-service.php">Single Service</a></li>
                         </ul>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="practice-areas.html">Practice Areas</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="practice-areas.php">Practice Areas</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">News</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="news.php">News</a>
                         <!-- RD Navbar Dropdown-->
                         <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-post.html">Single Post</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-post.php">Single Post</a></li>
                         </ul>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
                         <!-- RD Navbar Dropdown-->
                         <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="buttons.html">Buttons</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="forms.html">Forms</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-system.html">Grid System</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="progress-bars.html">Progress Bars</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="tables.html">Tables</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="tabs-and-accordions.html">Tabs and Accordions</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="typography.html">Typography</a></li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="privacy-policy.html">Privacy Policy</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="buttons.php">Buttons</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="forms.php">Forms</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-system.php">Grid System</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="progress-bars.php">Progress Bars</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="tables.php">Tables</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="tabs-and-accordions.php">Tabs and Accordions</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="typography.php">Typography</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="privacy-policy.php">Privacy Policy</a></li>
                         </ul>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.php">Contacts</a>
                       </li>
                     </ul>
                   </div>
                   <!-- RD Navbar Search-->
                   <div class="rd-navbar-search">
                     <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
-                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                    <form class="rd-search" action="search-results.php" data-search-live="rd-search-results-live" method="GET">
                       <div class="form-wrap">
                         <label class="form-label" for="rd-navbar-search-form-input">Search</label>
                         <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
@@ -130,7 +130,7 @@
         <div class="container">
           <h4 class="breadcrumbs-custom-title">Services</h4>
           <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li class="active">Services</li>
           </ul>
         </div>
@@ -274,7 +274,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-user"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Family Law</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Family Law</a></h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                 </div>
               </div>
@@ -283,7 +283,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-briefcase-2"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Business Law</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Business Law</a></h4>
                   <p>Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Est ante in nibh mauris cursus mattis.</p>
                 </div>
               </div>
@@ -292,7 +292,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-book"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Civil Litigation</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Civil Litigation</a></h4>
                   <p>Sed felis eget velit aliquet sagittis id. Erat pellentesque adipiscing commodo elit at imperdiet. </p>
                 </div>
               </div>
@@ -301,7 +301,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-umbrella"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Insurance Defence</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Insurance Defence</a></h4>
                   <p>Massa placerat duis ultricies lacus sed turpis tincidunt id. Vitae nunc sed velit dignissim sodales ut eu. </p>
                 </div>
               </div>
@@ -310,7 +310,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-home"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Land &amp; Asset</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Land &amp; Asset</a></h4>
                   <p>Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Et pharetra pharetra massa</p>
                 </div>
               </div>
@@ -319,7 +319,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-money"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Finance Law</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Finance Law</a></h4>
                   <p>Integer feugiat scelerisque varius morbi enim. Nunc non blandit massa enim nec dui nunc mattis.</p>
                 </div>
               </div>
@@ -328,7 +328,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-love"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Medical Law</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Medical Law</a></h4>
                   <p>Aenean pharetra magna ac placerat vestibulum. Ipsum suspendisse ultrices gravida dictum fusce. </p>
                 </div>
               </div>
@@ -337,7 +337,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-planet"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Trust &amp; Estates</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Trust &amp; Estates</a></h4>
                   <p>Habitasse platea dictumst vestibulum rhoncus est. Diam ut venenatis tellus in metus vulputate. </p>
                 </div>
               </div>
@@ -346,7 +346,7 @@
               <div class="block-icon-modern">
                 <div class="icon-figure"><span class="icon icon-xl thin-icon-pointer"></span></div>
                 <div class="block-icon-caption">
-                  <h4 class="block-icon-title"><a href="single-service.html">Personal Injury</a></h4>
+                  <h4 class="block-icon-title"><a href="single-service.php">Personal Injury</a></h4>
                   <p>Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Et magnis dis </p>
                 </div>
               </div>
@@ -380,7 +380,7 @@
             </div>
             <div class="col-12 col-lg-9">
               <!-- RD Mailform-->
-              <form class="rd-mailform text-left row row-20" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.html">
+              <form class="rd-mailform text-left row row-20" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                 <div class="col-sm-6 col-lg-4">
                   <div class="form-wrap">
                     <label class="form-label" for="contact-name">Your Name * </label>
@@ -417,7 +417,7 @@
         <div class="footer-classic-top section-sm">
           <div class="container">
             <div class="row row-50">
-              <div class="col-sm-6 col-lg-3"><a class="footer-logo" href="index.html"><img src="images/logo-inverse-159x40.png" alt="" width="159" height="40"/></a>
+              <div class="col-sm-6 col-lg-3"><a class="footer-logo" href="index.php"><img src="images/logo-inverse-159x40.png" alt="" width="159" height="40"/></a>
                 <p>If you or your business is facing a legal challenge that calls for sound advice, contact us today to arrange a free consultation with an attorney.</p>
               </div>
               <div class="col-sm-6 col-lg-3">
@@ -439,17 +439,17 @@
               <div class="col-sm-6 col-lg-3">
                 <h5 class="footer-title">Quick Links</h5>
                 <ul class="link-list list-sm">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us  </a></li>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="about.php">About Us  </a></li>
                   <li><a href="#">Contact Us </a></li>
                   <li><a href="#">Our Service </a></li>
-                  <li><a href="news.html">Blog </a></li>
+                  <li><a href="news.php">Blog </a></li>
                 </ul>
               </div>
               <div class="col-sm-6 col-lg-3">
                 <h5 class="footer-title">newsletter</h5>
                 <!-- RD Mailform-->
-                <form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.html">
+                <form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                   <div class="form-wrap">
                     <label class="form-label" for="footer-email">Your Email Address</label>
                     <input class="form-input" id="footer-email" type="email" name="email" data-constraints="@Email @Required">
@@ -470,7 +470,7 @@
           <div class="container">
             <div class="row row-30">
               <div class="col-md-9 order-md-1">
-                <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>SD</span><span>.&nbsp;</span><span>All rights reserved</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+                <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>SD</span><span>.&nbsp;</span><span>All rights reserved</span><span>.&nbsp;</span><a href="privacy-policy.php">Privacy Policy</a></p>
               </div>
               <div class="col-md-3 order-md-2 text-md-right">
                 <ul class="list-inline list-inline-sm social-list">

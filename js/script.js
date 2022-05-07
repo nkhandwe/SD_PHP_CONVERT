@@ -416,7 +416,7 @@
 		 * @param {object} options
 		 */
 		function liveSearch(options) {
-			$('#' + options.live).removeClass('cleared').html();
+			$('#' + options.live).removeClass('cleared').php();
 			options.current++;
 			options.spin.addClass('loading');
 			$.get(handler, {
@@ -431,7 +431,7 @@
 				var live = $('#' + options.live);
 				if ((options.processed === options.current) && !live.hasClass('cleared')) {
 					live.find('> #search-results').removeClass('active');
-					live.html(data);
+					live.php(data);
 					setTimeout(function () {
 						live.find('> #search-results').addClass('active');
 					}, 50);
@@ -552,7 +552,7 @@
 			if (captchaToken.length === 0) {
 				captcha
 					.siblings('.form-validation')
-					.html('Please, prove that you are not robot.')
+					.php('Please, prove that you are not robot.')
 					.addClass('active');
 				captcha
 					.closest('.form-wrap')
@@ -569,7 +569,7 @@
 						$this
 							.siblings('.form-validation')
 							.removeClass('active')
-							.html('');
+							.php('');
 						$this.off('propertychange');
 					}
 				});
@@ -1063,11 +1063,11 @@
 
 		// RD Search
 		if (plugins.search.length || plugins.searchResults) {
-			var handler = "bat/rd-search.html";
+			var handler = "bat/rd-search.php";
 			var defaultTemplate = '<h5 class="search-title"><a target="_top" href="#{href}" class="search-link">#{title}</a></h5>' +
 				'<p>...#{token}...</p>' +
 				'<p class="match"><em>Terms matched: #{count} - URL: #{href}</em></p>';
-			var defaultFilter = '*.html';
+			var defaultFilter = '*.php';
 
 			if (plugins.search.length) {
 				for (var i = 0; i < plugins.search.length; i++) {
@@ -1109,13 +1109,13 @@
 
 									$body.on("click", function (e) {
 										if ($(e.toElement).parents('.rd-search').length === 0) {
-											$('#rd-search-results-live').addClass('cleared').html('');
+											$('#rd-search-results-live').addClass('cleared').php('');
 										}
 									})
 								}
 
 							} else if (this.term.length === 0) {
-								$('#' + this.live).addClass('cleared').html('');
+								$('#' + this.live).addClass('cleared').php('');
 							}
 						}, options, this));
 					}
@@ -1142,7 +1142,7 @@
 						template: defaultTemplate,
 						live: ''
 					}, function (data) {
-						plugins.searchResults.html(data);
+						plugins.searchResults.php(data);
 					})
 				}
 			}
@@ -1345,14 +1345,14 @@
 						url: url,
 						dataType: 'jsonp',
 						error: function (resp, text) {
-							$output.html('Server error: ' + text);
+							$output.php('Server error: ' + text);
 
 							setTimeout(function () {
 								$output.removeClass("active");
 							}, 4000);
 						},
 						success: function (resp) {
-							$output.html(resp.msg).addClass('active');
+							$output.php(resp.msg).addClass('active');
 							$email[0].value = '';
 							var $label = $('[for="'+ $email.attr( 'id' ) +'"]');
 							if ( $label.length ) $label.removeClass( 'focus not-empty' );
@@ -1397,7 +1397,7 @@
 							if (isNoviBuilder || !isValidated)
 								return false;
 
-							$output.html('Submitting...').addClass('active');
+							$output.php('Submitting...').addClass('active');
 						}
 					});
 
@@ -1427,14 +1427,14 @@
 						url: url,
 						dataType: 'jsonp',
 						error: function (resp, text) {
-							$output.html('Server error: ' + text);
+							$output.php('Server error: ' + text);
 
 							setTimeout(function () {
 								$output.removeClass("active");
 							}, 4000);
 						},
 						success: function (resp) {
-							$output.html(resp.Message).addClass('active');
+							$output.php(resp.Message).addClass('active');
 
 							setTimeout(function () {
 								$output.removeClass("active");
@@ -1445,7 +1445,7 @@
 							if (isNoviBuilder || !isValidated($this.find('[data-constraints]')))
 								return false;
 
-							$output.html('Submitting...').addClass('active');
+							$output.php('Submitting...').addClass('active');
 						}
 					});
 
@@ -1510,14 +1510,14 @@
 
 								$.ajax({
 									method: "POST",
-									url: "bat/reCaptcha.html",
+									url: "bat/reCaptcha.php",
 									data: {'g-recaptcha-response': captchaToken},
 									async: false
 								})
 									.done(function (responceCode) {
 										if (responceCode !== 'CPT000') {
 											if (output.hasClass("snackbars")) {
-												output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + captchaMsg[responceCode] + '</span></p>')
+												output.php('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + captchaMsg[responceCode] + '</span></p>')
 
 												setTimeout(function () {
 													output.removeClass("active");
@@ -1525,7 +1525,7 @@
 
 												captchaFlag = false;
 											} else {
-												output.html(captchaMsg[responceCode]);
+												output.php(captchaMsg[responceCode]);
 											}
 
 											output.addClass("active");
@@ -1540,7 +1540,7 @@
 							form.addClass('form-in-process');
 
 							if (output.hasClass("snackbars")) {
-								output.html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Sending</span></p>');
+								output.php('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Sending</span></p>');
 								output.addClass("active");
 							}
 						} else {
@@ -1582,13 +1582,13 @@
 
 						if (result === "MF000") {
 							if (output.hasClass("snackbars")) {
-								output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + msg[result] + '</span></p>');
+								output.php('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + msg[result] + '</span></p>');
 							} else {
 								output.addClass("active success");
 							}
 						} else {
 							if (output.hasClass("snackbars")) {
-								output.html(' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' + msg[result] + '</span></p>');
+								output.php(' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' + msg[result] + '</span></p>');
 							} else {
 								output.addClass("active error");
 							}
